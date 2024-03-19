@@ -2,10 +2,7 @@
 // Getting all the Wainwrights
 const getAllWainwrights = async () =>{
     return fetch('https://raw.githubusercontent.com/annahndr/annahndr.github.io/master/wainwrights_data/wainwrights.json')
-    .then(response => response.json());
-
-    // const response = await fetch('https://raw.githubusercontent.com/annahndr/annahndr.github.io/master/wainwrights_data/wainwrights.json');
-    // const jsonData = await response.json();  
+    .then(response => response.json()); 
 }
 
 
@@ -31,9 +28,7 @@ document.getElementById('wainwrightsData').addEventListener('click', async() =>{
     })
 })
 
-const input = document.getElementById("user-input");
-const inputValue = input.value;
-console.log(inputValue);
+
 
 
 
