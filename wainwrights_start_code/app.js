@@ -31,4 +31,10 @@ document.getElementById('wainwrightsData').addEventListener('click', async() =>{
     })
 })
 
+const input = document.getElementById("user-input");
+const inputValue = input.value;
+console.log(inputValue);
+
+
+
 
