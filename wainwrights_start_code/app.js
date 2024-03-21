@@ -1,8 +1,12 @@
 
 // Getting all the Wainwrights
 const getAllWainwrights = async () =>{
-    return fetch('https://raw.githubusercontent.com/annahndr/annahndr.github.io/master/wainwrights_data/wainwrights.json')
-    .then(response => response.json()); 
+    fetch('https://raw.githubusercontent.com/annahndr/annahndr.github.io/master/wainwrights_data/wainwrights.json')
+    //.then(response => response.json()); 
+
+    const response = await fetch('https://raw.githubusercontent.com/annahndr/annahndr.github.io/master/wainwrights_data/wainwrights.json');
+    const jsonData = await response.json(); 
+    return jsonData; 
 }
 
 
